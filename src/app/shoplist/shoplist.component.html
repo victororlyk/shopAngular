@@ -1,0 +1,19 @@
+<div *ngIf="goods">
+  <div *ngFor="let good of goods.products">
+    <a [href]="good.link" [ngStyle]="{display:'block'}"><img [src]="good.img" class="thumb"></a>
+    <div class="stars-outer">
+      <div
+        class="stars-inner"
+        [ngStyle]="{width:getStarsWidth(good.stars)}"
+      ></div>
+    </div>
+    <a [href]="good.link" [ngStyle]="{display:'block'}"><span>{{good.name}}</span></a>
+    <span [ngStyle]="{display:'block'}">code of the goods: {{good.asin}}</span>
+    <span [ngStyle]="{display:'block'}">Price: {{good.price}}</span>
+    <button
+      class="btn btn-success"
+      [ngStyle]="{display:'block'}"
+    >buy
+    </button>
+  </div>
+</div>
