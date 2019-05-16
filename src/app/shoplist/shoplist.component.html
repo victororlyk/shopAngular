@@ -1,5 +1,5 @@
-<div *ngIf="goods">
-  <div *ngFor="let good of goods.products">
+<div *ngIf="goods" class="products">
+  <div *ngFor="let good of goods.products" class="product">
     <a [href]="good.link" [ngStyle]="{display:'block'}"><img [src]="good.img" class="thumb"></a>
     <div class="stars-outer">
       <div
@@ -7,11 +7,11 @@
         [ngStyle]="{width:getStarsWidth(good.stars)}"
       ></div>
     </div>
-    <a [href]="good.link" [ngStyle]="{display:'block'}"><span>{{good.name}}</span></a>
-    <span [ngStyle]="{display:'block'}">code of the goods: {{good.asin}}</span>
-    <span [ngStyle]="{display:'block'}">Price: {{good.price}}</span>
+    <p><a [href]="good.link" [ngStyle]="{display:'block'}">{{good.name}}</a></p>
+    <span [ngStyle]="{display:'block'}">code: {{good.asin}}</span>
+    <h3>Price: {{good.price}}</h3>
     <button
-      class="btn btn-success"
+      class="btn btn-success btn-lg"
       [ngStyle]="{display:'block'}"
     >buy
     </button>

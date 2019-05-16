@@ -1,13 +1,10 @@
-img
-  width: 300px
-
+//making stars
 .stars-outer
   display: inline-block
   position: relative
   font-family: FontAwesome
   &::before
     content: "\f006 \f006 \f006 \f006 \f006"
-
 .stars-inner
   position: absolute
   top: 0
@@ -18,4 +15,46 @@ img
   &::before
     content: "\f005 \f005 \f005 \f005 \f005"
     color: #f8ce0b
+
+.products
+  margin-top: 10px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.products .product
+  position: relative
+  display: flex
+  flex-direction: column
+  border: 1px solid #ccc
+  width: 402px
+  min-height: 397px
+  height: 550px
+  border-radius: 5px
+  padding: 25px
+  margin-right: 10px
+  margin-bottom : 10px
+  vertical-align: top
+  .stars-outer
+    margin-top: 10px
+  h3
+    font-size: 24px
+    font-weight: 700
+    color: #C30
+    flex-grow: 1
+  p
+    font-weight: 300
+    margin-top: 20px
+    flex-grow: 2
+  img
+    height: 140px
+    cursor: pointer
+    background: #fff
+    left : 50%
+    margin-left: -55px
+    top: 60px
+  button
+    width: 70%
+    margin-left: 50%
+    transform: translateX(-50%)
+    margin-bottom: auto
 
