@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d21ec0767b324b07bdb5fd8a49c62afe)](https://www.codacy.com/manual/victororlyk/shopAngular?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=victororlyk/shopAngular&amp;utm_campaign=Badge_Grade)
 # Training
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
